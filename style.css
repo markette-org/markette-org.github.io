@@ -128,7 +128,7 @@ section { padding: 72px 0; }
 .code .c { color: #8f8aa8; }
 
 .repos { background: var(--surface); border-top: 1px solid var(--line); }
-.repo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 32px 0 20px; }
+.repo-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin: 32px 0 20px; }
 .repo-grid a { display: flex; flex-direction: column; gap: 6px; border: 1px solid var(--line); border-radius: 14px; padding: 18px; color: var(--text); background: var(--bg); transition: border-color .15s, transform .15s; }
 .repo-grid a:hover { border-color: var(--accent); text-decoration: none; transform: translateY(-2px); }
 .repo-grid b { font-family: var(--mono); font-size: .92rem; color: var(--accent-ink); }
@@ -141,7 +141,8 @@ section { padding: 72px 0; }
   .hero-in, .two { grid-template-columns: 1fr; }
   .mock-card { transform: none; }
   .grid { grid-template-columns: 1fr 1fr; }
-  .net-groups, .repo-grid { grid-template-columns: 1fr 1fr; }
+  .net-groups { grid-template-columns: 1fr 1fr; }
+  .repo-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 640px) {
   .nav nav { display: none; }
