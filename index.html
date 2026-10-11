@@ -150,7 +150,7 @@
           <li>OpenRouter or any OpenAI-compatible endpoint for AI</li>
           <li>Optional Stripe billing if you host it for others</li>
         </ul>
-        <p><a class="btn btn-ghost" href="https://github.com/markette-org/markette-deploy#readme">Read the deploy guide</a></p>
+        <p><a class="btn btn-ghost" href="https://github.com/markette-org/markette-deploy/blob/main/SELF_HOSTING.md">Read the self-hosting guide</a></p>
       </div>
       <pre class="code"><code><span class="c"># get the compose stack</span>
 git clone https://github.com/markette-org/markette-deploy.git
@@ -158,6 +158,7 @@ cd markette-deploy && cp .env.example .env
 
 <span class="c"># start it</span>
 docker compose up -d
+docker compose exec api python manage.py createsuperuser
 docker compose exec api python manage.py \
   make_superadmin you@example.org
 
